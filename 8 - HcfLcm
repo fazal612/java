@@ -1,32 +1,30 @@
-/* PROGRAM 8 
-Java Programming Code to Find HCF LCM of Two Numbers */
+/* PROGRAM NO 8 */
 
 import java.util.Scanner;
 
-class HcfLcm {
-    public static void main(String args[]) {
-        int temp1, temp2, a, b, temp, hcf, lcm;
-        Scanner sc = new Scanner(System.in);
-        System.out.print("Enter First Number: ");
-        a = sc.nextInt();
-        System.out.print("Enter Second Number: ");
-        b = sc.nextInt();
+class HCFLCM
+{
+   public static void main(String args[]){
+      int temp1, temp2, num1, num2, temp, hcf, lcm;
+      Scanner scanner = new Scanner(System.in);
+      System.out.print("Enter First Number: ");
+      num1 = scanner.nextInt();
+      System.out.print("Enter Second Number: ");
+      num2 = scanner.nextInt();
 
-        // find hcf
-        temp1 = a;
-        temp2 = b;
+      temp1 = num1;
+      temp2 = num2;
+   
+      while(temp2 != 0){
+         temp = temp2;
+         temp2 = temp1%temp2;
+         temp1 = temp;         
+      }
 
-        while (temp2 != 0) {
-            temp = temp2;
-            temp2 = temp1 % temp2;
-            temp1 = temp;
-        }
-        hcf = temp1;
+      hcf = temp1;
+      lcm = (num1*num2)/hcf;
 
-        // find lcm
-        lcm = (a * b) / hcf;
-
-        System.out.println("HCF of input numbers: " + hcf);
-        System.out.println("LCM of input numbers: " + lcm);
-    }
+      System.out.println("HCF of input numbers: "+hcf);
+      System.out.println("LCM of input numbers: "+lcm);
+   }
 }
