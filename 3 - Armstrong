@@ -1,4 +1,6 @@
-/* PROGRAM NO 3 */
+/* PROGRAM 3
+Write java program to display Armstrong numbers within a range. */
+
 
 import java.util.Scanner;  
 import java.lang.Math; 
