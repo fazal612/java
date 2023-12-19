@@ -1,20 +1,26 @@
-/* PROGRAM 2
-Write java program to display Fibonacci series up to a limit. */
+/* PROGRAM NO 2 */ 
 
-import java.util.*;
-class Fibonacci{
-    public static void main(String args[]){
-        int n,n1,n2,n3,i;
-        n1=-1;
-        n2=1;
-        System.out.print("Enter your limit: ");
-        Scanner sc= new Scanner(System.in);
-        n=sc.nextInt();
-        for(i=0;i<n;i++){
-            n3=n1+n2;
-            System.out.print(" " +n3);
-            n1=n2;
-            n2=n3;
-        }
+import java.util.Scanner;
+class Fibo
+{
+   public static void main(String args[])
+    {
+      Scanner sc = new Scanner(System.in);
+      System.out.print("Enter the Limit :");
+      int n = sc.nextInt();
+      int FT=0,ST=1;
+      System.out.println("Fibonacci Series upto " + n  + " is : ");
+      int NT = 0;
+      for(int i=1;i<=n;i++)
+         {
+           if( FT <= n )
+           {
+             System.out.print(FT + ", ");
+
+             NT = FT + ST;
+             FT = ST;
+             ST = NT;
+           }
+         }
     }
 }
