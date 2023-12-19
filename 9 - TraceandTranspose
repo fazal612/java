@@ -1,9 +1,8 @@
-/* PROGRAM 9
-Write a program to find the trace and transpose of a matrix. */
+/* PROGRAM NO 9 */
 
 import java.util.Scanner;
 
-class TraceandTranspose 
+class Transpose 
 {
   public static void main(String args[])
   {
@@ -15,7 +14,7 @@ class TraceandTranspose
        
     System.out.print("Enter the Number of Rows : ");
     r = sc.nextInt();
-    System.out.print("Enter the Number of Columns : ");
+    System.out.print("nter the Number of Columns : ");
     c = sc.nextInt();
     if (r != c) 
     {
@@ -25,7 +24,6 @@ class TraceandTranspose
     {
        matrix = new int[r][c];
        transpose = new int[c][r];
-
        System.out.print("Enter the Elements of Matrix : ");
        for (int i = 0; i < r; i++) 
        {
@@ -34,7 +32,6 @@ class TraceandTranspose
             matrix[i][j] = sc.nextInt();
           }
        }
-
        System.out.println("\nGiven Matrix");
        for (int i = 0; i < r; i++) 
        {
@@ -44,7 +41,6 @@ class TraceandTranspose
          }
         System.out.print("\n");
        }
-
        for (int i = 0; i < r; i++) 
        {
          for (int j = 0; j < c; j++)
@@ -56,7 +52,6 @@ class TraceandTranspose
             }
          }
       }
-
       System.out.println("\nThe Trace of the Given Matrix is = " + sum);
       System.out.println("\nTranspose Matrix");
       for (int i = 0; i < c; i++) 
