@@ -1,4 +1,6 @@
-/* PROGRAM NO 7 */
+/* PROGRAM 7
+Write a program to merge two arrays */
+
 
 class MergeArray
 {
