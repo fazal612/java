@@ -1,4 +1,6 @@
-/* PROGRAM NO 9 */
+/* PROGRAM 9
+Write a program to find the trace and transpose of a matrix. */
+
 
 import java.util.Scanner;
 
